@@ -7,12 +7,25 @@ if (isGithubActions) {
   assetPrefix = `/${repo}/`;
   basePath = `/${repo}`;
 }
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+    assetPrefix: assetPrefix,
+    basePath: basePath,
+    images: {
+      unoptimized: true,
+    },
+    output: 'export'
+  };
 
-module.exports = {
-    output: 'export',
-  assetPrefix: assetPrefix,
-  basePath: basePath,
-  images: {
-    unoptimized: true,
-  },
-};
+  
+// module.exports = {
+//     output: 'export',
+//   assetPrefix: assetPrefix,
+//   basePath: basePath,
+//   images: {
+//     unoptimized: true,
+//   },
+// };
+module.exports = nextConfig
