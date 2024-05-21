@@ -7,14 +7,11 @@ if (isGithubActions) {
   assetPrefix = `/${repo}/`;
   basePath = `/${repo}`;
 }
-
-const nextConfig = {
+module.exports = {
+  output: 'export',
   assetPrefix: assetPrefix,
   basePath: basePath,
   images: {
     unoptimized: true,
   },
-  output: 'export'
 };
-
-export default nextConfig;
