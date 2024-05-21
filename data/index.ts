@@ -44,7 +44,7 @@ export const gridItems = [
     imgClassName: "",
     titleClassName: "justify-start",
     img: "/grid.svg",
-    spareImg: "/b4.svg",
+    spareImg: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/b4.svg?alt=media&token=76e690d0-abdb-4037-9151-b1ed829dbb3d",
   },
 
   {
