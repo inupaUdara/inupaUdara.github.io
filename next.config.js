@@ -7,7 +7,10 @@ if (isGithubActions) {
   assetPrefix = `/${repo}/`;
   basePath = `/${repo}`;
 }
-module.exports = {
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
   output: 'export',
   assetPrefix: assetPrefix,
   basePath: basePath,
@@ -15,3 +18,5 @@ module.exports = {
     unoptimized: true,
   },
 };
+
+module.exports = nextConfig;
