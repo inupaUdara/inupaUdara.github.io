@@ -13,7 +13,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "https://firebasestorage.googleapis.com/v0/b/mern-estate-863d3.appspot.com/o/b1.svg?alt=media&token=568d32a0-70ca-4320-8375-4956cc50ca55",
     spareImg: "",
   },
   {
