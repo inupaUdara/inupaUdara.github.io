@@ -1,5 +1,3 @@
-import { useRouter } from 'next/router';
-const { basePath } = useRouter();
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -15,7 +13,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: `${basePath}/b1.svg`,
+    img: "/b1.svg",
     spareImg: "",
   },
   {
