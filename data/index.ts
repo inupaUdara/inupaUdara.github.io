@@ -74,7 +74,7 @@ export const projects = [
     id: 1,
     title: "3D Solar System Planets to Explore",
     des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/cover%20photo.png?alt=media&token=7de97a41-b286-4938-945b-e0db4953ee37",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://github.com/adrianhajdin?tab=repositories",
   },
