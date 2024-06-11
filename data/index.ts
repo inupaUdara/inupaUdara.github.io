@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Skills", link: "#skills" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -268,14 +268,17 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/git.svg?alt=media&token=9fb83111-7708-4e6b-8324-015583f63cc9",
+    link: "https://github.com/inupaUdara",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/instagram-logo%20(1).png?alt=media&token=d18878a9-5d38-4861-9764-fd9f295960d9",
+    link: "https://www.instagram.com/_.inupa._"
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/link.svg?alt=media&token=62208b2c-f843-4de0-9089-3fee10d38f3b",
+    link: "https://www.linkedin.com/in/inupaudara",
   },
 ];
