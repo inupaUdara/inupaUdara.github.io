@@ -31,8 +31,8 @@ const Hero = () => {
           Web Developer
           </h2>
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words=" Enthusiastic about learning and implementing new technologies to solve complex problems"
+            className="text-center text-[40px] md:text-4xl lg:text-5xl"
+            words="Passionate about leveraging new technologies to solve complex problems"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
