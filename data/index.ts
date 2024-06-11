@@ -77,7 +77,7 @@ export const projects = [
   {
     id: 1,
     title: "Tap N' Bash - Mobile Game (Kotlin)",
-    des: "Tap N' Bash is a digital adaptation of the classic arcadegame “Whack-a-Mole.",
+    des: "Tap N' Bash is a digital adaptation of the classic arcadegame 'Whack-a-Mole'.",
     img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/cover%20photo.png?alt=media&token=7de97a41-b286-4938-945b-e0db4953ee37",
     iconLists: [
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/kotlin.svg?alt=media&token=37ec5254-f0ed-48c8-9534-13ea97fbb355",
@@ -124,6 +124,7 @@ export const projects = [
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/javascript.png?alt=media&token=97c65889-e784-4134-beb3-abfa344809b3",
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/html5-plain.png?alt=media&token=9f3df68d-ae4d-4232-ab96-dcfb3562ffa5",
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/css3-plain.png?alt=media&token=8ca63499-8471-4448-95a5-b2a672ee7c86",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/mysql-original-wordmark.png?alt=media&token=d1b6339f-ca5f-486c-9b22-2da490644f43",
     ],
     link: "https://github.com/inupaUdara/Event.lk",
   },
@@ -230,6 +231,36 @@ export const skills = [
     id: 12,
     name: "Node.Js",
     img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/node-js.svg?alt=media&token=e850d626-f3a5-49f7-a1d8-3638d0eef3fb",
+
+  },
+  {
+    id: 13,
+    name: "PHP",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/php-plain.png?alt=media&token=0c1b5b59-476f-42c1-b8f5-562da17aa298",
+
+  },
+  {
+    id: 14,
+    name: "Git",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/git-plain.png?alt=media&token=c97a31fd-1cb3-4b1c-8a24-67b6d751a2fb",
+
+  },
+  {
+    id: 15,
+    name: "Figma",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/figma-original.png?alt=media&token=922da01d-2225-42d0-880e-b8f183ce377a",
+
+  },
+  {
+    id: 16,
+    name: "Photoshop",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/photoshop-plain.png?alt=media&token=0714f9ca-fdb6-4ffa-9521-e6255714cbae",
+
+  },
+  {
+    id: 17,
+    name: "Illustrator",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/illustrator-plain.png?alt=media&token=9810befc-f3ab-4d72-a6e4-a9c34b5f485f",
 
   },
 ];
