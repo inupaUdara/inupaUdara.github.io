@@ -162,36 +162,75 @@ export const testimonials = [
   },
 ];
 
-export const companies = [
+export const skills = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "Java",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/java-original.png?alt=media&token=3c7c8325-874e-4df4-97b8-b1042361e8fa",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    name: "JavaScript",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/javascript.png?alt=media&token=97c65889-e784-4134-beb3-abfa344809b3",
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    name: "Python",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/python-original.png?alt=media&token=58427116-9267-464a-94b1-a18ef37a05cc"
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    name: "Kotlin",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/kotlin.svg?alt=media&token=37ec5254-f0ed-48c8-9534-13ea97fbb355",
+
   },
   {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "HTML",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/html5-plain.png?alt=media&token=9f3df68d-ae4d-4232-ab96-dcfb3562ffa5",
+
+  },
+  {
+    id: 6,
+    name: "CSS",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/css3-plain.png?alt=media&token=8ca63499-8471-4448-95a5-b2a672ee7c86",
+
+  },
+  {
+    id: 7,
+    name: "MySql",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/mysql-original-wordmark.png?alt=media&token=d1b6339f-ca5f-486c-9b22-2da490644f43",
+
+  },
+  {
+    id: 8,
+    name: "TailwindCSS",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/tail.svg?alt=media&token=232beaed-3e5e-4494-b655-572cd4efe6c4",
+
+  },
+  {
+    id: 9,
+    name: "React",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/re.svg?alt=media&token=b1bf2f82-da90-40e9-8c28-259a7dc6b417",
+
+  },
+  {
+    id: 10,
+    name: "MongoDB",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/mongodb.svg?alt=media&token=983593b5-d15d-4672-9a79-d80a32809bcf",
+
+  },
+  {
+    id: 11,
+    name: "Express",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/express.svg?alt=media&token=79ac702e-f829-4365-bf75-a353bcbe0440",
+
+  },
+  {
+    id: 12,
+    name: "Node.Js",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/node-js.svg?alt=media&token=e850d626-f3a5-49f7-a1d8-3638d0eef3fb",
+
   },
 ];
 
