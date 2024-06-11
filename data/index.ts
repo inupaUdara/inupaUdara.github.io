@@ -43,7 +43,7 @@ export const gridItems = [
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
-    titleClassName: "justify-start",
+    titleClassName: "justify-center md:max-w-full max-w-60 text-left",
     img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/grid.svg?alt=media&token=2d8ddce6-97bb-43dd-84ae-0dc7064175a9",
     spareImg:
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/b4.svg?alt=media&token=718c1d8f-e549-40b9-b8f8-72938e515a1a",
@@ -56,7 +56,7 @@ export const gridItems = [
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
+    titleClassName: "justify-center md:max-w-full max-w-60 text-left",
     img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/b5.svg?alt=media&token=e446f57e-fe3d-4cb1-9555-77be3448500b",
     spareImg:
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/grid.svg?alt=media&token=2d8ddce6-97bb-43dd-84ae-0dc7064175a9",

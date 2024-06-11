@@ -113,6 +113,7 @@ export const BentoGridItem = ({
           {id === 2 && <GlobeDemo />}
 
           {id === 4 && (
+            <div className="mt-5 relative">
             <a href="https://github.com/inupaUdara" target="_blank" rel="noopener noreferrer">
               <MagicButton
               title='GitHub Profile'
@@ -122,6 +123,7 @@ export const BentoGridItem = ({
   
             />
             </a>
+            </div>
           )}
           {id === 5 && (
             <a href="https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/Inupa_Udara_CV.pdf?alt=media&token=4a92b431-9456-4b8c-89ae-3e74c6175ad3" target="_blank" download="Inupa_Udara_CV.pdf">
