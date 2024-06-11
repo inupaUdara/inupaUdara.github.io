@@ -7,7 +7,7 @@ import Lottie from "react-lottie";
 import { useState } from "react";
 import animationData from "@/data/confetti.json"
 import MagicButton from "./MagicButton";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaAddressCard  } from "react-icons/fa";
 import { IoCopyOutline } from "react-icons/io5";
 export const BentoGrid = ({
   className,
@@ -112,7 +112,7 @@ export const BentoGridItem = ({
 
           {id === 2 && <GlobeDemo />}
 
-          {id === 5 && (
+          {id === 4 && (
             <a href="https://github.com/inupaUdara" target="_blank" rel="noopener noreferrer">
               <MagicButton
               title='GitHub Profile'
@@ -121,7 +121,17 @@ export const BentoGridItem = ({
               otherClasses="!bg-[#161a31]"
   
             />
-
+            </a>
+          )}
+          {id === 5 && (
+            <a href="https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/Inupa_Udara_CV.pdf?alt=media&token=4a92b431-9456-4b8c-89ae-3e74c6175ad3" target="_blank" download="Inupa_Udara_CV.pdf">
+              <MagicButton
+              title='Download CV'
+              icon={<FaAddressCard />}
+              position="left"
+              otherClasses="!bg-[#161a31]"
+  
+            />
             </a>
           )}
 
