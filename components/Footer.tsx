@@ -5,15 +5,15 @@ import MagicButton from "./ui/MagicButton";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
+    <footer className="w-full pt-20 pb-10 bg-[url('https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/footer-grid.svg?alt=media&token=2c9f532f-0c9f-433c-89ec-bc6341e5d32b')]" id="contact">
       {/* background grid */}
-      <div className="w-full absolute left-0 -bottom-96 min-h-96">
+      {/* <div className="w-full absolute left-0 -bottom-96 min-h-96">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/footer-grid.svg?alt=media&token=2c9f532f-0c9f-433c-89ec-bc6341e5d32b"
           alt="grid"
           className="w-full h-full opacity-50 "
         />
-      </div>
+      </div> */}
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">Contact</h1>
