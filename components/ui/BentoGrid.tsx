@@ -7,6 +7,7 @@ import Lottie from "react-lottie";
 import { useState } from "react";
 import animationData from "@/data/confetti.json"
 import MagicButton from "./MagicButton";
+import { FaGithub } from "react-icons/fa";
 import { IoCopyOutline } from "react-icons/io5";
 export const BentoGrid = ({
   className,
@@ -110,6 +111,19 @@ export const BentoGridItem = ({
           </div>
 
           {id === 2 && <GlobeDemo />}
+
+          {id === 5 && (
+            <a href="https://github.com/inupaUdara" target="_blank" rel="noopener noreferrer">
+              <MagicButton
+              title='GitHub Profile'
+              icon={<FaGithub />}
+              position="left"
+              otherClasses="!bg-[#161a31]"
+  
+            />
+
+            </a>
+          )}
 
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">

@@ -1,8 +1,7 @@
 import { projects } from '@/data'
 import React from 'react'
 import { PinContainer } from './ui/3d-pin'
-import { FaLocationArrow } from 'react-icons/fa6'
-
+import { FaGithub } from "react-icons/fa";
 const RecentProjects = () => {
   return (
     <div className='py-20' id='projects'>
@@ -36,10 +35,13 @@ const RecentProjects = () => {
                                     </div>
                                 ))}
                             </div>
+
+                            <a href={link} target="_blank" rel="noopener noreferrer">
                             <div className="flex justify-center items-center">
-                                <p className='flex lg:text-xl md:text-xs text-sm text-purple'>Check Live Site</p>
-                                <FaLocationArrow className='ms-3' color='#cbacf9'/>
+                                <p className='flex lg:text-xl md:text-xs text-sm text-purple'>GitHub Repo</p>
+                                <FaGithub className='ms-3' color='#cbacf9'/>
                             </div>
+                            </a>
                         </div>
                     </PinContainer>
                 </div>
