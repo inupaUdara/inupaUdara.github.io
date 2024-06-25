@@ -11,22 +11,22 @@ export const gridItems = [
     title:
       "I am currently following Bachelor of Science (Hons) in Informaton Technology Specializing in Software Engineering. My journey in technology started in university, and since then, I've developed a strong interest in creating impactful software applications.",
     description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-2 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: "https://firebasestorage.googleapis.com/v0/b/mern-estate-863d3.appspot.com/o/b1.svg?alt=media&token=568d32a0-70ca-4320-8375-4956cc50ca55",
     spareImg: "",
   },
-  {
-    id: 2,
-    title: "I'm from Pannipitiya, Sri Lanka.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
-  },
+  // {
+  //   id: 2,
+  //   title: "I'm from Pannipitiya, Sri Lanka.",
+  //   description: "",
+  //   className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+  //   imgClassName: "",
+  //   titleClassName: "justify-start",
+  //   img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/my.jpg?alt=media&token=327b7d10-900d-40a0-8490-9710de0cbd2a",
+  //   spareImg: "",
+  // },
   {
     id: 3,
     title: "My tech stack",
@@ -130,38 +130,7 @@ export const projects = [
   },
 ];
 
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-];
+
 
 export const skills = [
   {
@@ -265,34 +234,20 @@ export const skills = [
   },
 ];
 
-export const workExperience = [
+export const education = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Sri Lanka Institute of Information Technology (SLIIT)",
+    desc: "BSc (Hons) in Information Technology Specializing in Software Engineering | Current GPA - 3.52 | Year 3",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/SLIIT_Logo_Crest.png?alt=media&token=c9e59f49-361e-4421-93a9-b435735d9b22",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Mahinda Rajapaksha College, Homagama, Sri Lanka",
+    desc: "Primary and Secondary Education",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/Background1.png?alt=media&token=917f0b74-04f5-42e5-808d-b26728d001f1",
   },
 ];
 
