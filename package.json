@@ -12,8 +12,12 @@
     "deploy": "next build && gh-pages -d out"
   },
   "dependencies": {
+    "@radix-ui/react-label": "^2.1.0",
     "@react-three/drei": "^9.105.6",
     "@react-three/fiber": "^8.16.6",
+    "@tsparticles/engine": "^3.7.1",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.4",
     "mini-svg-data-uri": "^1.4.4",
