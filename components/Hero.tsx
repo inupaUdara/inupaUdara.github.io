@@ -28,9 +28,9 @@ const Hero = () => {
           fill="blue"
         />
       </div>
-      <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
+      <div className="h-screen w-full dark:bg-stone-950 bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
         {/* Radial gradient for the container to give a faded look */}
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-stone-950 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
       <div className="hidden absolute top-0 inset-x-0 w-full h-full text-left mt-4 sm:flex justify-center gap-4 ">
         {wordsArray.map((word, idx) => (
@@ -70,7 +70,7 @@ const Hero = () => {
 
           {/* </h1> */}
           <div className="h-[10rem] w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
-            <h1 className="md:text-5xl text-3xl lg:text-7xl font-bold text-center text-white relative z-20">
+            <h1 className="md:text-5xl text-3xl lg:text-6xl font-bold text-center text-white relative z-20">
               Inupa Udara
             </h1>
             <div className="w-[40rem] h-10 relative mt-3">
