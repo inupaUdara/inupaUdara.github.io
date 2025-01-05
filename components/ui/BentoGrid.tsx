@@ -131,7 +131,7 @@ export const BentoGridItem = ({
               title='Download CV'
               icon={<FaAddressCard />}
               position="left"
-              otherClasses="!bg-[#161a31]"
+              otherClasses="!bg-zinc-950"
   
             />
             </a>
