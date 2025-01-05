@@ -14,8 +14,8 @@ const Grid = () => {
     {
       quote:
         "Tech enthusiast with a passion for development.",
-      // name: "Michael Rodriguez",
-      // designation: "CTO at InnovateSphere",
+      name: "",
+      designation: "",
       src: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/DALL%C2%B7E%202024-11-20%2019.41.01%20-%20A%20symbolic%20representation%20of%20a%20young%20software%20engineer%20who%20is%20also%20a%20creative%20UX%20designer%2C%20sitting%20at%20a%20sleek%20desk%20in%20a%20modern%20workspace.%20The%20workspac.webp?alt=media&token=31b24dd4-60fc-459a-b233-12defb1450e7",
     },
     // {
