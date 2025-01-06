@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description: "Inupa Udara's personal website",
     images: ['https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/my.jpg?alt=media&token=327b7d10-900d-40a0-8490-9710de0cbd2a']
   },
-  metadataBase: new URL("https://inupaudara.github.io/inupa-udara.github.io"),
+  metadataBase: new URL("https://inupaudara.me"),
   keywords: ["Inupa Udara", "Inupa", "Udara", "Personal Website", "inupa", "udara", "inupa udara", "inupa-udara", "portfolio", "projects", "skills", "experience", "education", "about", "contact"],
 };
 
