@@ -3,19 +3,20 @@ let assetPrefix = '';
 let basePath = '';
 
 if (isGithubActions) {
-  const repo = process.env.GITHUB_REPOSITORY.split('/')[1];
-  assetPrefix = `/${repo}/`;
-  basePath = `/${repo}`;
+  // Use custom domain settings directly
+  assetPrefix = 'https://inupaudara.me/';
+  basePath = '';
 }
+
 /**
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
   output: 'export',
-  assetPrefix: assetPrefix,
-  basePath: basePath,
+  assetPrefix: assetPrefix, // Ensure assets are served from your custom domain
+  basePath: basePath,       // No need for basePath when using a custom domain
   images: {
-    unoptimized: true,
+    unoptimized: true,     // Disable image optimization for GitHub Pages
   },
 };
 
