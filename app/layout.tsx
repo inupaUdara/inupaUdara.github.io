@@ -8,9 +8,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Inupa Udara",
+  description: "Discover Inupa Udara's personal projects, skills, and experience in software engineering. Stay connected and learn more.",
   openGraph: {
     description: "Discover Inupa Udara's personal projects, skills, and experience in software engineering. Stay connected and learn more.",
-    images: ["https://inupaudara.me/favicon.ico"],
+    images: [{url: "https://inupaudara.me/favicon.ico", alt: "Inupa Udara's logo", width: 96, height: 96}],
   },
   metadataBase: new URL("https://inupaudara.me"),
   keywords: ["Inupa Udara", "Software Engineer", "Portfolio", "Projects", "Skills"],
