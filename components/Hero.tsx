@@ -83,7 +83,7 @@ const Hero = () => {
           {/* Description */}
           <div className="max-w-3xl mx-auto">
             <TextGenerateEffect
-              className="text-center text-lg md:text-xl lg:text-2xl text-gray-300 leading-relaxed"
+              className="text-center text-lg md:text-lg lg:text-xl text-gray-300 leading-relaxed"
               words="Currently Software Engineering Intern at SparQ Corporate, passionate about creating innovative solutions and building exceptional digital experiences."
             />
           </div>
