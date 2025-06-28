@@ -97,7 +97,7 @@ const AskMeSection = () => {
             <span className="text-purple">Anything</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-xl mx-auto mt-4">
-            Have questions about my experience, skills, or projects? Ask away! I'm powered by AI to give you detailed
+            Have questions about my experience, skills, or projects? Ask away! I&#39;m powered by AI to give you detailed
             answers.
           </p>
         </div>
