@@ -1,3 +1,4 @@
+import AskMeSection from "@/components/AskMe";
 import Education from "@/components/Education";
 import { Experience } from "@/components/Experience";
 import Footer from "@/components/Footer";
@@ -21,6 +22,7 @@ export default function Home() {
         <Education />
         <Skills />
         <RecentProjects />
+        <AskMeSection />
         <Footer />
       </div>
     </main>

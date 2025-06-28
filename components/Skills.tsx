@@ -44,11 +44,11 @@ const Skills = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="heading">
             Technical{" "}
-            <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Skills</span>
+            <span className="text-purple">Skills</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-400 text-lg max-w-xl mx-auto mt-4">
             A comprehensive overview of my technical expertise across different domains
           </p>
         </div>
