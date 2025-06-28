@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/ui/Timeline";
+import logo from "@/public/Logo-for-WSITE-1.2-1024x1024.png";
 
 export function Experience() {
   const data = [
@@ -16,7 +17,7 @@ export function Experience() {
         </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="https://media.licdn.com/dms/image/v2/D560BAQFPWJm-1TtkIQ/company-logo_200_200/company-logo_200_200/0/1719989822627/sparq_corporate_australia_logo?e=1743033600&v=beta&t=RkpsRI-245ntvRJydSwoHkFni8k-owXs-3zCczs07_c"
+              src={logo}
               alt="startup template"
               width={500}
               height={500}
