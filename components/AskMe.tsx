@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import MagicButton from "@/components/ui/MagicButton"
+import axios from "axios"
 import { Input } from "@/components/ui/Input"
 import { Card, CardContent } from "@/components/ui/Card"
 import { Send, Bot, User, Loader2, MessageCircle, Sparkles } from "lucide-react"
@@ -21,55 +21,50 @@ const AskMeSection = () => {
   const [isLoading, setIsLoading] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    if (!question.trim() || isLoading) return
+  e.preventDefault()
+  if (!question.trim() || isLoading) return
 
-    const userMessage: Message = {
-      id: Date.now().toString(),
-      type: "user",
-      content: question.trim(),
+  const userMessage: Message = {
+    id: Date.now().toString(),
+    type: "user",
+    content: question.trim(),
+    timestamp: new Date(),
+  }
+
+  setMessages((prev) => [...prev, userMessage])
+  setQuestion("")
+  setIsLoading(true)
+
+  try {
+    const response = await axios.post("/api/ask-question", {
+      question: question.trim()
+    }, {
+      headers: {
+        "Content-Type": "application/json",
+      }
+    })
+
+    const aiMessage: Message = {
+      id: (Date.now() + 1).toString(),
+      type: "ai",
+      content: response.data.answer,
       timestamp: new Date(),
     }
 
-    setMessages((prev) => [...prev, userMessage])
-    setQuestion("")
-    setIsLoading(true)
-
-    try {
-      const response = await fetch("/api/ask-question", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ question: question.trim() }),
-      })
-
-      if (!response.ok) {
-        throw new Error("Failed to get response")
-      }
-
-      const data = await response.json()
-
-      const aiMessage: Message = {
-        id: (Date.now() + 1).toString(),
-        type: "ai",
-        content: data.answer,
-        timestamp: new Date(),
-      }
-
-      setMessages((prev) => [...prev, aiMessage])
-    } catch (error) {
-      const errorMessage: Message = {
-        id: (Date.now() + 1).toString(),
-        type: "ai",
-        content: "Sorry, I'm having trouble answering that question right now. Please try again later.",
-        timestamp: new Date(),
-      }
-      setMessages((prev) => [...prev, errorMessage])
-    } finally {
-      setIsLoading(false)
+    setMessages((prev) => [...prev, aiMessage])
+  } catch (error) {
+    console.error('Error:', error)
+    const errorMessage: Message = {
+      id: (Date.now() + 1).toString(),
+      type: "ai",
+      content: "Sorry, I'm having trouble answering that question right now. Please try again later.",
+      timestamp: new Date(),
     }
+    setMessages((prev) => [...prev, errorMessage])
+  } finally {
+    setIsLoading(false)
   }
+}
 
   const suggestedQuestions = [
     "What programming languages do you specialize in?",
