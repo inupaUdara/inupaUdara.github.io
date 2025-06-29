@@ -3,7 +3,6 @@
 import type React from "react"
 
 import { useState } from "react"
-import axios from "axios"
 import { Input } from "@/components/ui/Input"
 import { Card, CardContent } from "@/components/ui/Card"
 import { Send, Bot, User, Loader2, MessageCircle, Sparkles } from "lucide-react"
@@ -21,50 +20,124 @@ const AskMeSection = () => {
   const [isLoading, setIsLoading] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault()
-  if (!question.trim() || isLoading) return
+    e.preventDefault()
+    if (!question.trim() || isLoading) return
 
-  const userMessage: Message = {
-    id: Date.now().toString(),
-    type: "user",
-    content: question.trim(),
-    timestamp: new Date(),
-  }
+    const userMessage: Message = {
+      id: Date.now().toString(),
+      type: "user",
+      content: question.trim(),
+      timestamp: new Date(),
+    }
 
-  setMessages((prev) => [...prev, userMessage])
-  setQuestion("")
-  setIsLoading(true)
+    setMessages((prev) => [...prev, userMessage])
+    const currentQuestion = question.trim()
+    setQuestion("")
+    setIsLoading(true)
 
-  try {
-    const response = await axios.post("/api/ask-question", {
-      question: question.trim()
-    }, {
-      headers: {
-        "Content-Type": "application/json",
+    try {
+      // Check if API key is available
+      if (!process.env.NEXT_PUBLIC_GOOGLE_GENERATIVE_AI_API_KEY) {
+        throw new Error("AI service is not configured")
       }
-    })
 
-    const aiMessage: Message = {
-      id: (Date.now() + 1).toString(),
-      type: "ai",
-      content: response.data.answer,
-      timestamp: new Date(),
-    }
+      // Context about Inupa Udara
+      const context = `You are an AI assistant representing Inupa Udara, a Software Engineering student and intern. Here's what you know about him:
 
-    setMessages((prev) => [...prev, aiMessage])
-  } catch (error) {
-    console.error('Error:', error)
-    const errorMessage: Message = {
-      id: (Date.now() + 1).toString(),
-      type: "ai",
-      content: "Sorry, I'm having trouble answering that question right now. Please try again later.",
-      timestamp: new Date(),
+PERSONAL INFO:
+- Name: Inupa Udara
+- Currently: Software Engineering Intern at SparQ Corporate
+- Education: Software Engineering Undergraduate at SLIIT (Sri Lanka Institute of Information Technology)
+- Location: Based in Sri Lanka
+
+TECHNICAL SKILLS:
+Programming Languages: Java (85%), JavaScript (90%), Python (80%), Kotlin (75%), PHP (70%)
+Frontend: HTML (95%), CSS (90%), React (85%), TailwindCSS (88%)
+Backend: Node.js (82%), Express (80%)
+Databases: MySQL (85%), MongoDB (78%)
+Tools & Design: Git (88%), Figma (82%), Photoshop (75%), Illustrator (70%)
+
+EXPERIENCE:
+- Currently working as a Software Engineering Intern at SparQ Corporate
+- Strong background in full-stack development
+- Experience with modern web technologies
+- Passionate about creating innovative solutions and building exceptional digital experiences
+
+PERSONALITY & APPROACH:
+- Passionate about technology and software development
+- Problem solver who enjoys creating innovative solutions
+- Focused on building exceptional digital experiences
+- Always learning and improving skills
+
+Answer questions as if you are Inupa or representing him. Be friendly, professional, and informative. 
+If asked about specific projects or experiences not mentioned above, you can speak generally about the types of work 
+a software engineering intern might do, but be honest if you don't have specific details.
+Keep responses concise but informative (2-4 sentences typically).`
+
+      // Call Google Generative AI API directly
+      const response = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.NEXT_PUBLIC_GOOGLE_GENERATIVE_AI_API_KEY}`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            contents: [{
+              parts: [{
+                text: `${context}\n\nUser Question: ${currentQuestion}\n\nResponse:`
+              }]
+            }],
+            generationConfig: {
+              temperature: 0.7,
+              maxOutputTokens: 300,
+            }
+          })
+        }
+      )
+
+      if (!response.ok) {
+        throw new Error(`API request failed: ${response.status}`)
+      }
+
+      const data = await response.json()
+      
+      // Extract the generated text from Google's response format
+      const aiResponse = data.candidates?.[0]?.content?.parts?.[0]?.text || 
+                        "Sorry, I couldn't generate a response. Please try again."
+
+      const aiMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        type: "ai",
+        content: aiResponse,
+        timestamp: new Date(),
+      }
+
+      setMessages((prev) => [...prev, aiMessage])
+    } catch (error) {
+      console.error('Error:', error)
+      
+      let errorContent = "Sorry, I'm having trouble answering that question right now. Please try again later."
+      
+      if (error instanceof Error) {
+        if (error.message.includes("not configured")) {
+          errorContent = "AI service is not configured. Please try again later."
+        } else if (error.message.includes("quota") || error.message.includes("limit")) {
+          errorContent = "AI service is temporarily unavailable. Please try again later."
+        }
+      }
+      
+      const errorMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        type: "ai",
+        content: errorContent,
+        timestamp: new Date(),
+      }
+      setMessages((prev) => [...prev, errorMessage])
+    } finally {
+      setIsLoading(false)
     }
-    setMessages((prev) => [...prev, errorMessage])
-  } finally {
-    setIsLoading(false)
   }
-}
 
   const suggestedQuestions = [
     "What programming languages do you specialize in?",
