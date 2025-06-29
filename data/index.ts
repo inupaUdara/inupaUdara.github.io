@@ -1,3 +1,14 @@
+import typescript from "@/public/typescript.png";
+import docker from "@/public/docker.png";
+import kubernetes from "@/public/icons8-kubernetes-48.png";
+import redux from "@/public/redux.png";
+import flutter from "@/public/flutter.png";
+import next from "@/public/next.png";
+import firebase from "@/public/firebase.png";
+
+import microservice from "@/public/microservice.png";
+import ecoBin from "@/public/ecobin.png";
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Experience", link: "#experience" },
@@ -112,6 +123,7 @@ export const projects = [
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/node-js.svg?alt=media&token=e850d626-f3a5-49f7-a1d8-3638d0eef3fb",
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/express.svg?alt=media&token=79ac702e-f829-4365-bf75-a353bcbe0440",
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/tail.svg?alt=media&token=232beaed-3e5e-4494-b655-572cd4efe6c4",
+      redux,
     ],
     link: "https://github.com/inupaUdara/mern-real-estate",
   },
@@ -129,22 +141,133 @@ export const projects = [
     ],
     link: "https://github.com/inupaUdara/Event.lk",
   },
+  {
+    id: 5,
+    title: "Microservice Food Ordering App (TypeScript)",
+    des: "A modern microservice-based food ordering application built with TypeScript, featuring scalable architecture and efficient service communication.",
+    img: microservice, // You'll need to add an appropriate image
+    iconLists: [
+      typescript,
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/re.svg?alt=media&token=b1bf2f82-da90-40e9-8c28-259a7dc6b417",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/mongodb.svg?alt=media&token=983593b5-d15d-4672-9a79-d80a32809bcf",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/javascript.png?alt=media&token=97c65889-e784-4134-beb3-abfa344809b3",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/express.svg?alt=media&token=79ac702e-f829-4365-bf75-a353bcbe0440",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/node-js.svg?alt=media&token=e850d626-f3a5-49f7-a1d8-3638d0eef3fb",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/tail.svg?alt=media&token=232beaed-3e5e-4494-b655-572cd4efe6c4",
+      redux,
+      docker,
+      kubernetes,
+    ],
+    link: "https://github.com/inupaUdara/Microservice-Food-Ordering-App",
+  },
+  {
+    id: 6,
+    title: "Smart Waste Management System (MERN)",
+    des: "A comprehensive web application using MERN stack and MaterialUI for efficient waste management and tracking systems.",
+    img: ecoBin,
+    iconLists: [
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/re.svg?alt=media&token=b1bf2f82-da90-40e9-8c28-259a7dc6b417",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/mongodb.svg?alt=media&token=983593b5-d15d-4672-9a79-d80a32809bcf",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/javascript.png?alt=media&token=97c65889-e784-4134-beb3-abfa344809b3",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/node-js.svg?alt=media&token=e850d626-f3a5-49f7-a1d8-3638d0eef3fb",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/express.svg?alt=media&token=79ac702e-f829-4365-bf75-a353bcbe0440",
+      redux,
+    ],
+    link: "https://github.com/inupaUdara/Smart-Waste-Management-System",
+  },
+  {
+    id: 7,
+    title: "Flutter Education App for Visually Impaired (Dart)",
+    des: "An inclusive educational application built with Flutter to enhance the learning experience for visually impaired students with accessibility features.",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/flutter-education-placeholder.jpg?alt=media", // You'll need to add an appropriate image
+    iconLists: [flutter],
+    link: "https://github.com/inupaUdara/Flutter-Education-app-SPM",
+  },
+  {
+    id: 8,
+    // title: "AI SaaS Platform (Next.js)",
+    // des: "Comprehensive AI-powered SaaS platform with conversation, image generation, video generation, music generation, and code generation capabilities using Next.js.",
+    // img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/ai-saas-placeholder.jpg?alt=media", // You'll need to add an appropriate image
+    // iconLists: [
+    //   "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/nextjs.svg?alt=media", // You'll need Next.js icon
+    //   "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/typescript.svg?alt=media", // You'll need TypeScript icon
+    // ],
+    // link: "https://github.com/inupaUdara/ai-saas",
+    title: "Weather Reports NodeJS App (JavaScript)",
+    des: "An automated weather reporting application built with Node.js that provides real-time weather data and forecasts with clean API integration and user-friendly interface.",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/weather-app-placeholder.jpg?alt=media", // You'll need to add an appropriate image
+    iconLists: [
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/node-js.svg?alt=media&token=e850d626-f3a5-49f7-a1d8-3638d0eef3fb",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/javascript.png?alt=media&token=97c65889-e784-4134-beb3-abfa344809b3",
+    ],
+    link: "https://github.com/inupaUdara/NodeJS-Weather-Reports-App",
+  },
+  {
+    id: 9,
+    title: "MERN Blog Application (JavaScript)",
+    des: "A full-featured blog application built with MERN stack and styled with Tailwind CSS, featuring user authentication and content management.",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/blog-app-placeholder.jpg?alt=media", // You'll need to add an appropriate image
+    iconLists: [
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/re.svg?alt=media&token=b1bf2f82-da90-40e9-8c28-259a7dc6b417",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/mongodb.svg?alt=media&token=983593b5-d15d-4672-9a79-d80a32809bcf",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/javascript.png?alt=media&token=97c65889-e784-4134-beb3-abfa344809b3",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/node-js.svg?alt=media&token=e850d626-f3a5-49f7-a1d8-3638d0eef3fb",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/tail.svg?alt=media&token=232beaed-3e5e-4494-b655-572cd4efe6c4",
+    ],
+    link: "https://github.com/inupaUdara/mern-blog-app",
+  },
+  {
+    id: 10,
+    title: "Next.js Prompt Sharing App (JavaScript)",
+    des: "A prompt sharing application with Google Authentication and CRUD operations built using Next.js React Framework with MongoDB integration.",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/prompt-app-placeholder.jpg?alt=media", // You'll need to add an appropriate image
+    iconLists: [
+      next,
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/javascript.png?alt=media&token=97c65889-e784-4134-beb3-abfa344809b3",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/mongodb.svg?alt=media&token=983593b5-d15d-4672-9a79-d80a32809bcf",
+    ],
+    link: "https://github.com/inupaUdara/next.js-prompt-app",
+  },
+  {
+    id: 11,
+    title: "React Native Firebase App (JavaScript)",
+    des: "A cross-platform mobile application built with React Native and integrated with Firebase for real-time data management and authentication.",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/react-native-placeholder.jpg?alt=media", // You'll need to add an appropriate image
+    iconLists: [
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/re.svg?alt=media&token=b1bf2f82-da90-40e9-8c28-259a7dc6b417",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/javascript.png?alt=media&token=97c65889-e784-4134-beb3-abfa344809b3",
+      firebase,
+    ],
+    link: "https://github.com/inupaUdara/React-Native-App",
+  },
+  {
+    id: 12,
+    title: "BizzSup - Customer Support System (PHP)",
+    des: "A comprehensive online customer support system built with PHP, providing efficient ticket management and customer service solutions.",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/bizzsup-placeholder.jpg?alt=media", // You'll need to add an appropriate image
+    iconLists: [
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/php-plain.png?alt=media&token=0c1b5b59-476f-42c1-b8f5-562da17aa298",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/mysql-original-wordmark.png?alt=media&token=d1b6339f-ca5f-486c-9b22-2da490644f43",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/javascript.png?alt=media&token=97c65889-e784-4134-beb3-abfa344809b3",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/html5-plain.png?alt=media&token=9f3df68d-ae4d-4232-ab96-dcfb3562ffa5",
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/css3-plain.png?alt=media&token=8ca63499-8471-4448-95a5-b2a672ee7c86",
+    ],
+    link: "https://github.com/inupaUdara/BizzSup",
+  },
 ];
 
-
-
 export interface Skill {
-  id: number
-  name: string
-  img: string
-  proficiency?: number
+  id: number;
+  name: string;
+  img: any;
+  proficiency?: number;
 }
 
 export interface SkillCategory {
-  title: string
-  icon: string
-  skills: Skill[]
-  color: string
+  title: string;
+  icon: string;
+  skills: Skill[];
+  color: string;
 }
 
 export const skillsData: SkillCategory[] = [
@@ -165,6 +288,14 @@ export const skillsData: SkillCategory[] = [
         img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/javascript.png?alt=media&token=97c65889-e784-4134-beb3-abfa344809b3",
         proficiency: 90,
       },
+
+      {
+        id: 16,
+        name: "TypeScript",
+        img: typescript,
+        proficiency: 80,
+      },
+
       {
         id: 3,
         name: "Python",
@@ -214,6 +345,30 @@ export const skillsData: SkillCategory[] = [
         img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/tail.svg?alt=media&token=232beaed-3e5e-4494-b655-572cd4efe6c4",
         proficiency: 88,
       },
+      {
+        id: 20,
+        name: "Next.js",
+        img: next,
+        proficiency: 80,
+      },
+      {
+        id: 21,
+        name: "React Native",
+        img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/re.svg?alt=media&token=b1bf2f82-da90-40e9-8c28-259a7dc6b417",
+        proficiency: 75,
+      },
+      {
+        id: 22,
+        name: "Flutter",
+        img: flutter,
+        proficiency: 70,
+      },
+      {
+        id: 23,
+        name: "Redux",
+        img: redux,
+        proficiency: 75,
+      },
     ],
   },
   {
@@ -252,6 +407,12 @@ export const skillsData: SkillCategory[] = [
         img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/mongodb.svg?alt=media&token=983593b5-d15d-4672-9a79-d80a32809bcf",
         proficiency: 78,
       },
+      {
+        id: 24,
+        name: "Firebase",
+        img: firebase,
+        proficiency: 75,
+      },
     ],
   },
   {
@@ -285,8 +446,26 @@ export const skillsData: SkillCategory[] = [
       },
     ],
   },
-]
-
+  {
+    title: "DevOps & Cloud",
+    icon: "☁️",
+    color: "from-cyan-500 to-blue-500",
+    skills: [
+      {
+        id: 18,
+        name: "Docker",
+        img: docker,
+        proficiency: 75,
+      },
+      {
+        id: 19,
+        name: "Kubernetes",
+        img: kubernetes,
+        proficiency: 70,
+      },
+    ],
+  },
+];
 
 export const education = [
   {
@@ -294,14 +473,16 @@ export const education = [
     title: "Sri Lanka Institute of Information Technology (SLIIT)",
     desc: "BSc (Hons) in Information Technology Specializing in Software Engineering | Current GPA - 3.52 | Year 4",
     className: "md:col-span-2",
-    thumbnail: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/SLIIT_Logo_Crest.png?alt=media&token=c9e59f49-361e-4421-93a9-b435735d9b22",
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/SLIIT_Logo_Crest.png?alt=media&token=c9e59f49-361e-4421-93a9-b435735d9b22",
   },
   {
     id: 2,
     title: "Mahinda Rajapaksha College, Homagama, Sri Lanka",
     desc: "Primary and Secondary Education",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/Background1.png?alt=media&token=917f0b74-04f5-42e5-808d-b26728d001f1",
+    thumbnail:
+      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/Background1.png?alt=media&token=917f0b74-04f5-42e5-808d-b26728d001f1",
   },
 ];
 
@@ -314,7 +495,7 @@ export const socialMedia = [
   {
     id: 2,
     img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/instagram-logo%20(1).png?alt=media&token=d18878a9-5d38-4861-9764-fd9f295960d9",
-    link: "https://www.instagram.com/_.inupa._"
+    link: "https://www.instagram.com/_.inupa._",
   },
   {
     id: 3,
