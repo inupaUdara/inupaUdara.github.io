@@ -80,7 +80,7 @@ jobs:
       - name: Build with Next.js
         env:
           # Set the environment variable for Google Generative AI API key
-          GOOGLE_GENERATIVE_AI_API_KEY: ${{ secrets.GOOGLE_GENERATIVE_AI_API_KEY }}
+          NEXT_PUBLIC_GOOGLE_GENERATIVE_AI_API_KEY: ${{ secrets.NEXT_PUBLIC_GOOGLE_GENERATIVE_AI_API_KEY }}
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       
       - name: Upload artifact

@@ -159,11 +159,7 @@ const Skills = () => {
             <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-4 hover:border-gray-700 transition-colors duration-200">
               <div className="text-2xl font-bold text-yellow-400 mb-1">{skillsStats.advancedSkills}</div>
               <div className="text-gray-400 text-sm">Advanced</div>
-            </div>
-            <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-4 hover:border-gray-700 transition-colors duration-200">
-              <div className="text-2xl font-bold text-purple-400 mb-1">5</div>
-              <div className="text-gray-400 text-sm">Categories</div>
-            </div>
+            </div>           
           </div>
         </div>
       </div>
