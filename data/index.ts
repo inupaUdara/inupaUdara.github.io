@@ -8,6 +8,10 @@ import firebase from "@/public/firebase.png";
 
 import microservice from "@/public/microservice.png";
 import ecoBin from "@/public/ecobin.png";
+import learn from "@/public/learn.png";
+import weather from "@/public/weather.jpeg";
+import blog from "@/public/blog.png";
+import bizzup from "@/public/bizzup.png";
 
 export const navItems = [
   { name: "About", link: "#about" },
@@ -179,7 +183,7 @@ export const projects = [
     id: 7,
     title: "Flutter Education App for Visually Impaired (Dart)",
     des: "An inclusive educational application built with Flutter to enhance the learning experience for visually impaired students with accessibility features.",
-    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/flutter-education-placeholder.jpg?alt=media", // You'll need to add an appropriate image
+    img: learn,
     iconLists: [flutter],
     link: "https://github.com/inupaUdara/Flutter-Education-app-SPM",
   },
@@ -195,7 +199,7 @@ export const projects = [
     // link: "https://github.com/inupaUdara/ai-saas",
     title: "Weather Reports NodeJS App (JavaScript)",
     des: "An automated weather reporting application built with Node.js that provides real-time weather data and forecasts with clean API integration and user-friendly interface.",
-    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/weather-app-placeholder.jpg?alt=media", // You'll need to add an appropriate image
+    img: weather,
     iconLists: [
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/node-js.svg?alt=media&token=e850d626-f3a5-49f7-a1d8-3638d0eef3fb",
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/javascript.png?alt=media&token=97c65889-e784-4134-beb3-abfa344809b3",
@@ -206,7 +210,7 @@ export const projects = [
     id: 9,
     title: "MERN Blog Application (JavaScript)",
     des: "A full-featured blog application built with MERN stack and styled with Tailwind CSS, featuring user authentication and content management.",
-    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/blog-app-placeholder.jpg?alt=media", // You'll need to add an appropriate image
+    img: blog,
     iconLists: [
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/re.svg?alt=media&token=b1bf2f82-da90-40e9-8c28-259a7dc6b417",
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/mongodb.svg?alt=media&token=983593b5-d15d-4672-9a79-d80a32809bcf",
@@ -216,35 +220,35 @@ export const projects = [
     ],
     link: "https://github.com/inupaUdara/mern-blog-app",
   },
-  {
-    id: 10,
-    title: "Next.js Prompt Sharing App (JavaScript)",
-    des: "A prompt sharing application with Google Authentication and CRUD operations built using Next.js React Framework with MongoDB integration.",
-    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/prompt-app-placeholder.jpg?alt=media", // You'll need to add an appropriate image
-    iconLists: [
-      next,
-      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/javascript.png?alt=media&token=97c65889-e784-4134-beb3-abfa344809b3",
-      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/mongodb.svg?alt=media&token=983593b5-d15d-4672-9a79-d80a32809bcf",
-    ],
-    link: "https://github.com/inupaUdara/next.js-prompt-app",
-  },
-  {
-    id: 11,
-    title: "React Native Firebase App (JavaScript)",
-    des: "A cross-platform mobile application built with React Native and integrated with Firebase for real-time data management and authentication.",
-    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/react-native-placeholder.jpg?alt=media", // You'll need to add an appropriate image
-    iconLists: [
-      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/re.svg?alt=media&token=b1bf2f82-da90-40e9-8c28-259a7dc6b417",
-      "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/javascript.png?alt=media&token=97c65889-e784-4134-beb3-abfa344809b3",
-      firebase,
-    ],
-    link: "https://github.com/inupaUdara/React-Native-App",
-  },
+  // {
+  //   id: 10,
+  //   title: "Next.js Prompt Sharing App (JavaScript)",
+  //   des: "A prompt sharing application with Google Authentication and CRUD operations built using Next.js React Framework with MongoDB integration.",
+  //   img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/prompt-app-placeholder.jpg?alt=media", // You'll need to add an appropriate image
+  //   iconLists: [
+  //     next,
+  //     "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/javascript.png?alt=media&token=97c65889-e784-4134-beb3-abfa344809b3",
+  //     "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/mongodb.svg?alt=media&token=983593b5-d15d-4672-9a79-d80a32809bcf",
+  //   ],
+  //   link: "https://github.com/inupaUdara/next.js-prompt-app",
+  // },
+  // {
+  //   id: 11,
+  //   title: "React Native Firebase App (JavaScript)",
+  //   des: "A cross-platform mobile application built with React Native and integrated with Firebase for real-time data management and authentication.",
+  //   img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/react-native-placeholder.jpg?alt=media", // You'll need to add an appropriate image
+  //   iconLists: [
+  //     "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/re.svg?alt=media&token=b1bf2f82-da90-40e9-8c28-259a7dc6b417",
+  //     "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/javascript.png?alt=media&token=97c65889-e784-4134-beb3-abfa344809b3",
+  //     firebase,
+  //   ],
+  //   link: "https://github.com/inupaUdara/React-Native-App",
+  // },
   {
     id: 12,
     title: "BizzSup - Customer Support System (PHP)",
     des: "A comprehensive online customer support system built with PHP, providing efficient ticket management and customer service solutions.",
-    img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/bizzsup-placeholder.jpg?alt=media", // You'll need to add an appropriate image
+    img: bizzup,
     iconLists: [
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/php-plain.png?alt=media&token=0c1b5b59-476f-42c1-b8f5-562da17aa298",
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/mysql-original-wordmark.png?alt=media&token=d1b6339f-ca5f-486c-9b22-2da490644f43",
