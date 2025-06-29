@@ -13,7 +13,6 @@ if (isGithubActions) {
  */
 const nextConfig = {
   output: 'export',
-  trailingSlash: true,
   assetPrefix: assetPrefix, // Ensure assets are served from your custom domain
   basePath: basePath,       // No need for basePath when using a custom domain
   images: {
