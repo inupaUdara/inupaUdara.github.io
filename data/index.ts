@@ -99,6 +99,9 @@ export const projects = [
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/kotlin.svg?alt=media&token=37ec5254-f0ed-48c8-9534-13ea97fbb355",
     ],
     link: "https://github.com/inupaUdara/Kotlin-Tap-N-Bash",
+    technologies: ["Kotlin", "Android"],
+    category: "Mobile",
+    featured: true,
   },
   {
     id: 2,
@@ -114,6 +117,9 @@ export const projects = [
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/tail.svg?alt=media&token=232beaed-3e5e-4494-b655-572cd4efe6c4",
     ],
     link: "https://github.com/inupaUdara/gym-management-system",
+    technologies: ["React", "Node.js", "MongoDB", "Express", "JavaScript", "TailwindCSS"],
+    category: "Full Stack",
+    featured: true,
   },
   {
     id: 3,
@@ -130,6 +136,9 @@ export const projects = [
       redux,
     ],
     link: "https://github.com/inupaUdara/mern-real-estate",
+    technologies: ["React", "Node.js", "MongoDB", "Express", "JavaScript", "Redux", "TailwindCSS"],
+    category: "Full Stack",
+    featured: true,
   },
   {
     id: 4,
@@ -144,6 +153,8 @@ export const projects = [
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/mysql-original-wordmark.png?alt=media&token=d1b6339f-ca5f-486c-9b22-2da490644f43",
     ],
     link: "https://github.com/inupaUdara/Event.lk",
+    technologies: ["Java", "JavaScript", "HTML", "CSS", "MySQL"],
+    category: "Backend",
   },
   {
     id: 5,
@@ -163,6 +174,9 @@ export const projects = [
       kubernetes,
     ],
     link: "https://github.com/inupaUdara/Microservice-Food-Ordering-App",
+     technologies: ["TypeScript", "React", "Node.js", "MongoDB", "Express", "Docker", "Kubernetes", "Redux"],
+    category: "Full Stack",
+    featured: true,
   },
   {
     id: 6,
@@ -178,6 +192,8 @@ export const projects = [
       redux,
     ],
     link: "https://github.com/inupaUdara/Smart-Waste-Management-System",
+    technologies: ["React", "Node.js", "MongoDB", "Express", "JavaScript", "Redux"],
+    category: "Full Stack",
   },
   {
     id: 7,
@@ -186,6 +202,8 @@ export const projects = [
     img: learn,
     iconLists: [flutter],
     link: "https://github.com/inupaUdara/Flutter-Education-app-SPM",
+    technologies: ["Flutter", "Dart"],
+    category: "Mobile",
   },
   {
     id: 8,
@@ -205,6 +223,8 @@ export const projects = [
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/javascript.png?alt=media&token=97c65889-e784-4134-beb3-abfa344809b3",
     ],
     link: "https://github.com/inupaUdara/NodeJS-Weather-Reports-App",
+    technologies: ["Node.js", "JavaScript"],
+    category: "Backend",
   },
   {
     id: 9,
@@ -219,6 +239,8 @@ export const projects = [
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/tail.svg?alt=media&token=232beaed-3e5e-4494-b655-572cd4efe6c4",
     ],
     link: "https://github.com/inupaUdara/mern-blog-app",
+    technologies: ["React", "Node.js", "MongoDB", "Express", "JavaScript", "TailwindCSS"],
+    category: "Full Stack",
   },
   // {
   //   id: 10,
@@ -257,6 +279,8 @@ export const projects = [
       "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/css3-plain.png?alt=media&token=8ca63499-8471-4448-95a5-b2a672ee7c86",
     ],
     link: "https://github.com/inupaUdara/BizzSup",
+    technologies: ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
+    category: "Backend",
   },
 ];
 

@@ -46,7 +46,7 @@ const Skills = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="heading">
             Technical{" "}
-            <span className="text-purple">Skills</span>
+            <span className="inline-block text-purple animate-bounce" style={{ animationDelay: "0.2s" }}>Skills</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-xl mx-auto mt-4">
             A comprehensive overview of my technical expertise across different domains

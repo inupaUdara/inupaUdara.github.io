@@ -191,7 +191,7 @@ Start each answer with clarity and confidence.`;
             <Sparkles className="w-6 h-6 text-yellow-400" />
           </div>
           <h2 className="heading">
-            Ask Me <span className="text-purple">Anything</span>
+            Ask Me <span className="inline-block text-purple animate-bounce" style={{ animationDelay: "0.2s" }}>Anything</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-xl mx-auto mt-4">
             Have questions about my experience, skills, or projects? Ask away!
