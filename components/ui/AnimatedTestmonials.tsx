@@ -147,7 +147,7 @@ export const AnimatedTestimonials = ({
               
             </motion.p>
             {active === 1 && (
-            <a href="https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/Inupa%20Udara%20-%20Intern%20Software%20Engineer.pdf?alt=media&token=35dcdc80-6166-43aa-8400-323046b4bfeb" target="_blank" download="Inupa_Udara_CV.pdf">
+            <a href="https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/Inupa%20Udara%20CV.pdf?alt=media&token=4abce32a-3963-4b52-b8e2-a03e41376e1a" target="_blank" download="Inupa_Udara_CV.pdf">
               <MagicButton
               title='Download CV'
               icon={<FaAddressCard />}
