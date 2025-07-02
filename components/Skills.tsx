@@ -36,7 +36,8 @@ const Skills = () => {
         category.skills.filter((skill) => (skill.proficiency || 0) >= 75 && (skill.proficiency || 0) < 85).length,
       0,
     )
-    return { totalSkills, expertSkills, advancedSkills }
+    const intermediateSkills = totalSkills - expertSkills - advancedSkills
+    return { totalSkills, expertSkills, advancedSkills, intermediateSkills }
   }, [])
 
   return (
@@ -147,7 +148,7 @@ const Skills = () => {
 
         {/* Skills Summary */}
         <div className="mt-12 text-center animate-fade-in" style={{ animationDelay: "300ms" }}>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
             <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-4 hover:border-gray-700 transition-colors duration-200">
               <div className="text-2xl font-bold text-white mb-1">{skillsStats.totalSkills}</div>
               <div className="text-gray-400 text-sm">Total Skills</div>
@@ -159,6 +160,10 @@ const Skills = () => {
             <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-4 hover:border-gray-700 transition-colors duration-200">
               <div className="text-2xl font-bold text-yellow-400 mb-1">{skillsStats.advancedSkills}</div>
               <div className="text-gray-400 text-sm">Advanced</div>
+            </div>
+            <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-4 hover:border-gray-700 transition-colors duration-200">
+              <div className="text-2xl font-bold text-orange-400 mb-1">{skillsStats.intermediateSkills}</div>
+              <div className="text-gray-400 text-sm">Intermediate</div>
             </div>           
           </div>
         </div>

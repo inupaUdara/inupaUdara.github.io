@@ -5,6 +5,9 @@ import redux from "@/public/redux.png";
 import flutter from "@/public/flutter.png";
 import next from "@/public/next.png";
 import firebase from "@/public/firebase.png";
+import mui from "@/public/mui.png";
+import springboot from "@/public/springboot.png";
+import postgresql from "@/public/postgresql.png";
 
 import microservice from "@/public/microservice.png";
 import ecoBin from "@/public/ecobin.png";
@@ -305,12 +308,6 @@ export const skillsData: SkillCategory[] = [
     color: "from-blue-500 to-cyan-500",
     skills: [
       {
-        id: 1,
-        name: "Java",
-        img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/java-original.png?alt=media&token=3c7c8325-874e-4df4-97b8-b1042361e8fa",
-        proficiency: 85,
-      },
-      {
         id: 2,
         name: "JavaScript",
         img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/javascript.png?alt=media&token=97c65889-e784-4134-beb3-abfa344809b3",
@@ -321,7 +318,13 @@ export const skillsData: SkillCategory[] = [
         id: 16,
         name: "TypeScript",
         img: typescript,
-        proficiency: 80,
+        proficiency: 85,
+      },
+      {
+        id: 1,
+        name: "Java",
+        img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/java-original.png?alt=media&token=3c7c8325-874e-4df4-97b8-b1042361e8fa",
+        proficiency: 85,
       },
 
       {
@@ -331,15 +334,15 @@ export const skillsData: SkillCategory[] = [
         proficiency: 80,
       },
       {
-        id: 4,
-        name: "Kotlin",
-        img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/kotlin.svg?alt=media&token=37ec5254-f0ed-48c8-9534-13ea97fbb355",
-        proficiency: 75,
-      },
-      {
         id: 13,
         name: "PHP",
         img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/php-plain.png?alt=media&token=0c1b5b59-476f-42c1-b8f5-562da17aa298",
+        proficiency: 75,
+      },
+      {
+        id: 4,
+        name: "Kotlin",
+        img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/kotlin.svg?alt=media&token=37ec5254-f0ed-48c8-9534-13ea97fbb355",
         proficiency: 70,
       },
     ],
@@ -356,16 +359,16 @@ export const skillsData: SkillCategory[] = [
         proficiency: 95,
       },
       {
+        id: 9,
+        name: "React",
+        img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/re.svg?alt=media&token=b1bf2f82-da90-40e9-8c28-259a7dc6b417",
+        proficiency: 90,
+      },
+      {
         id: 6,
         name: "CSS",
         img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/css3-plain.png?alt=media&token=8ca63499-8471-4448-95a5-b2a672ee7c86",
         proficiency: 90,
-      },
-      {
-        id: 9,
-        name: "React",
-        img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/re.svg?alt=media&token=b1bf2f82-da90-40e9-8c28-259a7dc6b417",
-        proficiency: 85,
       },
       {
         id: 8,
@@ -377,25 +380,31 @@ export const skillsData: SkillCategory[] = [
         id: 20,
         name: "Next.js",
         img: next,
+        proficiency: 85,
+      },
+      {
+        id: 25,
+        name: "Material UI",
+        img: mui,
+        proficiency: 80,
+      },
+      {
+        id: 23,
+        name: "Redux",
+        img: redux,
         proficiency: 80,
       },
       {
         id: 21,
         name: "React Native",
         img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/re.svg?alt=media&token=b1bf2f82-da90-40e9-8c28-259a7dc6b417",
-        proficiency: 75,
+        proficiency: 80,
       },
       {
         id: 22,
         name: "Flutter",
         img: flutter,
         proficiency: 70,
-      },
-      {
-        id: 23,
-        name: "Redux",
-        img: redux,
-        proficiency: 75,
       },
     ],
   },
@@ -408,14 +417,20 @@ export const skillsData: SkillCategory[] = [
         id: 12,
         name: "Node.js",
         img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/node-js.svg?alt=media&token=e850d626-f3a5-49f7-a1d8-3638d0eef3fb",
-        proficiency: 82,
+        proficiency: 95,
       },
       {
         id: 11,
         name: "Express",
         img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/express.svg?alt=media&token=79ac702e-f829-4365-bf75-a353bcbe0440",
-        proficiency: 80,
+        proficiency: 90,
       },
+      {
+        id:26,
+        name: "Java Spring Boot",
+        img: springboot,
+        proficiency: 80,
+      }
     ],
   },
   {
@@ -433,7 +448,13 @@ export const skillsData: SkillCategory[] = [
         id: 10,
         name: "MongoDB",
         img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/mongodb.svg?alt=media&token=983593b5-d15d-4672-9a79-d80a32809bcf",
-        proficiency: 78,
+        proficiency: 85,
+      },
+      {
+        id: 27,
+        name: "PostgreSQL",
+        img: postgresql,
+        proficiency: 75,
       },
       {
         id: 24,
@@ -452,7 +473,7 @@ export const skillsData: SkillCategory[] = [
         id: 14,
         name: "Git",
         img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/git-plain.png?alt=media&token=c97a31fd-1cb3-4b1c-8a24-67b6d751a2fb",
-        proficiency: 88,
+        proficiency: 90,
       },
       {
         id: 15,
@@ -464,7 +485,7 @@ export const skillsData: SkillCategory[] = [
         id: 16,
         name: "Photoshop",
         img: "https://firebasestorage.googleapis.com/v0/b/portfolie-a0b41.appspot.com/o/photoshop-plain.png?alt=media&token=0714f9ca-fdb6-4ffa-9521-e6255714cbae",
-        proficiency: 75,
+        proficiency: 70,
       },
       {
         id: 17,
