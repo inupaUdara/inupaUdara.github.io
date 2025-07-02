@@ -280,7 +280,7 @@ const RecentProjects = () => {
                 <Card
                   className={`
                   relative overflow-hidden transition-all duration-700 hover:scale-105
-                  bg-gradient-to-br from-gray-900/90 via-gray-800/50 to-gray-900/90
+                  bg-gradient-to-br from-gray-950 via-gray-900/50 to-gray-950
                   border-gray-700/50 hover:border-purple-500/50
                   backdrop-blur-sm h-full
                   ${hoveredProject === project.id ? "shadow-2xl shadow-purple-500/25 z-10" : ""}
