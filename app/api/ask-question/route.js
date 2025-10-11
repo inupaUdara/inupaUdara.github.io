@@ -119,7 +119,7 @@ a software engineering intern might do, but be honest if you don't have specific
 Keep responses concise but informative (2-4 sentences typically).`;
 
     const { text } = await generateText({
-      model: google("gemini-1.5-flash-latest"), 
+      model: google("gemini-2.0-flash"), 
       prompt: `${context}\n\nUser Question: ${question}\n\nResponse:`,
       maxTokens: 300,
       temperature: 0.7,
